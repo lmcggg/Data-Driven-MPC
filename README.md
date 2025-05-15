@@ -4,6 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A MATLAB implementation of Data-Driven Model Predictive Control (DDMPC) for linear time-invariant (LTI) systems that does not require explicit system identification.
+the idea is from the paper "Data-Driven Model Predictive Control With Stability and Robustness Guarantees" -IEEE TRANSACTIONS ON AUTOMATIC CONTROL, VOL. 66, NO. 4, APRIL 2021,by Julian Berberich , Johannes Köhler , Matthias A. Müller , and Frank Allgöwer.
 
 ## Overview
 
@@ -120,6 +121,20 @@ if noise_flag
     cost = cost + lambda_alpha * bar_epsilon * sum_square(alpha_coef) + lambda_sigma * sum_square(sigma_slack);
 end
 ```
+## Result
+
+DDMPC cost: 13.5458
+Model-based MPC cost: 15.0739
+Relative difference: -10.14%
+![image](https://github.com/user-attachments/assets/c08af08d-4ab6-467a-9c4a-55eda8d934de)
+
+![image](https://github.com/user-attachments/assets/b306cc40-c932-443b-85ff-de9c57bf5c3f)
+
+![image](https://github.com/user-attachments/assets/57c68f70-c72b-41ec-b082-796f84ba9fb2)
+
+![image](https://github.com/user-attachments/assets/d2561e7b-5f93-431d-8760-179f6627ffcd)
+
+
 
 ## Requirements
 
@@ -130,8 +145,3 @@ end
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## References
-
-1. J. C. Willems, P. Rapisarda, I. Markovsky, and B. L. De Moor, "A note on persistency of excitation," Systems & Control Letters, vol. 54, no. 4, pp. 325-329, 2005.
-2. J. Berberich, J. Köhler, M. A. Müller, and F. Allgöwer, "Data-driven model predictive control with stability and robustness guarantees," IEEE Transactions on Automatic Control, 2020.
-3. I. Markovsky and P. Rapisarda, "Data-driven simulation and control," International Journal of Control, vol. 81, no. 12, pp. 1946-1959, 2008. 
