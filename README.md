@@ -1,4 +1,4 @@
-![069d10a1e45723884ffa0a58e4687ed](https://github.com/user-attachments/assets/a155a814-7740-469b-9d22-667345b093ae)# Data-Driven Model Predictive Control (DDMPC)
+# Data-Driven Model Predictive Control (DDMPC)
 
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2019b%2B-blue.svg)](https://www.mathworks.com/products/matlab.html)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
