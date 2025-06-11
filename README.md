@@ -1,4 +1,4 @@
-# Data-Driven Model Predictive Control (DDMPC)
+![069d10a1e45723884ffa0a58e4687ed](https://github.com/user-attachments/assets/a155a814-7740-469b-9d22-667345b093ae)# Data-Driven Model Predictive Control (DDMPC)
 
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2019b%2B-blue.svg)](https://www.mathworks.com/products/matlab.html)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -134,7 +134,15 @@ Relative difference: -10.14%
 
 ![image](https://github.com/user-attachments/assets/d2561e7b-5f93-431d-8760-179f6627ffcd)
 
+## bug 
 
+lots of friends show me this bug in the picture :
+
+![069d10a1e45723884ffa0a58e4687ed](https://github.com/user-attachments/assets/43edce34-27bb-4af5-9cbc-87baca3c79f9)
+
+my suggest is :
+
+try to put the vec.m from (cvx-w64\cvx\functions\vec_) to  your current path. the solution is from:https://blog.csdn.net/Church_leader/article/details/143026958 .
 
 ## Requirements
 
