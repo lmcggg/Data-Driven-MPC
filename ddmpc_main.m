@@ -41,8 +41,8 @@ bar_epsilon = 0.01;    % Noise bound
 %% Compute input setpoint from output setpoint
 
 I_n = eye(size(A));
-if rank([I_n-A, B; C, D]) == n+p
-    steady_state = [I_n-A, B; C, D]\[zeros(n,1); y_s];
+if rank([I_n-A,-B; C, D]) == n+p
+    steady_state = [I_n-A,-B; C, D]\[zeros(n,1); y_s];
     x_s = steady_state(1:n);
     u_s = steady_state(n+1:end);
 else
@@ -245,6 +245,7 @@ grid on;
 xlabel('Time step');
 ylabel('Tracking Error');
 title('Output Tracking Error');
+
 
 
 
